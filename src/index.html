@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <title>Test</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo-container">
+
+          <div class="burger-menu-icon header__burger-menu-icon">
+            <span class="burger-menu-icon__line"></span>
+            <span class="burger-menu-icon__line"></span>
+            <span class="burger-menu-icon__line"></span> 
+          </div>
+          <div class="logo">
+            <a class="logo__link" href="#">
+              <img class="logo__img" src="./img/logo.svg" alt="logo">
+            </a>
+          </div>
+        </div>
+
+        <div class="header__company-info">
+          <div class="header__tel-info-wrapper">
+            <a class="header__tel" href="tel:+74951234567">+7(863) 000 00 00</a>
+          </div>
+          <div class="header__location-info">
+            <a class="header__city-location" href="">Ростов-на-Дону</a>
+            <a class="header__street-location" href="">ул. Ленина, 2Б</a>
+          </div>
+        </div>
+
+        <button class="appointment-btn">Записаться на прием</button>
+
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="nav__container">
+        <ul class="navigate-menu-list">
+          <li class="navigate-menu-list__item"><a href="#" class="navigate-menu-list__item-link">О клинике</a></li>
+          <li class="navigate-menu-list__item"><a href="#" class="navigate-menu-list__item-link">Услуги</a></li>
+          <li class="navigate-menu-list__item"><a href="#" class="navigate-menu-list__item-link">Специалисты</a></li>
+          <li class="navigate-menu-list__item"><a href="#" class="navigate-menu-list__item-link">Цены</a></li>
+          <li class="navigate-menu-list__item"><a href="#" class="navigate-menu-list__item-link">Контакты</a></li>
+        </ul>
+        <button class="nav__appointment-btn">Записаться на прием</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="about">
+      <div class="about__container">
+        <div class="about__inner">
+          <picture class="about__picture">
+            <source srcset="./img/about_bg@1x.png 1x, ./img/about_bg@2x.png 2x" media="(min-width: 1200px)">
+            <source srcset="./img/about_bg_mobile@1x.png 1x, ./img/about_bg_mobile@2x.png 2x" media="(min-width: 320px)">
+            <img src="./img/about_bg@2x.png" class="about__img">
+          </picture>
+          <div class="about__descrpt-container">
+            <h1 class="about__title">Многопрофильная клиника для детей <br>и взрослых</h1>
+            <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+      </div>
+    </section>
+
+    <section class="srvices">
+      <div class="container">
+        <div class="services__inner">
+          <div class="slider swiper">
+
+            <div class="swiper-wrapper" style="box-sizing: border-box;">
+
+              <div class="slider__display swiper-slide">
+                <div class="slider__img"></div>
+                <div class="slider__service-info">
+                  <h2 class="slider__service-title">Check-UP</h2>
+                  <h3 class="slider__service-subtitle">для мужчин</h3>
+                  <ul class="slider__service-list">
+                    <li class="slider__service-list-item"><span>Гормональный скрининг</span></li>
+                    <li class="slider__service-list-item"><span>Тестостерон</span></li>
+                    <li class="slider__service-list-item"><span>Свободный тестостерон</span></li>
+                    <li class="slider__service-list-item"><span>Глобулин, связывающий половые гормоны</span></li>
+                  </ul>
+                  <div class="slider__service-price-container">
+                    <span class="slider__service-total-price">Всего 2800₽</span>
+                    <span class="slider__service-price">3500₽</span>
+                  </div>
+                  <div class="slider__btns-container">
+                    <button class="slider__appointment-btn">Записаться</button>
+                    <button class="slider__detail-btn">Подробнее</button>
+                  </div>  
+                </div>
+              </div>
+
+              <div class="slider__display swiper-slide">
+                <div class="slider__img"></div>
+                <div class="slider__service-info">
+                  <h2 class="slider__service-title">Check-UP</h2>
+                  <h3 class="slider__service-subtitle">для мужчин</h3>
+                  <ul class="slider__service-list">
+                    <li class="slider__service-list-item"><span>Гормональный скрининг</span></li>
+                    <li class="slider__service-list-item"><span>Тестостерон</span></li>
+                    <li class="slider__service-list-item"><span>Свободный тестостерон</span></li>
+                    <li class="slider__service-list-item"><span>Глобулин, связывающий половые гормоны</span></li>
+                  </ul>
+                  <div class="slider__service-price-container">
+                    <span class="slider__service-total-price">Всего 1800₽</span>
+                    <span class="slider__service-price">2500₽</span>
+                  </div>
+                  <div class="slider__btns-container">
+                    <button class="slider__appointment-btn">Записаться</button>
+                    <button class="slider__detail-btn">Подробнее</button>
+                  </div>  
+                </div>
+              </div>
+
+              <div class="slider__display swiper-slide">
+                <div class="slider__img"></div>
+                <div class="slider__service-info">
+                  <h2 class="slider__service-title">Check-UP</h2>
+                  <h3 class="slider__service-subtitle">для мужчин</h3>
+                  <ul class="slider__service-list">
+                    <li class="slider__service-list-item"><span>Гормональный скрининг</span></li>
+                    <li class="slider__service-list-item"><span>Тестостерон</span></li>
+                    <li class="slider__service-list-item"><span>Свободный тестостерон</span></li>
+                    <li class="slider__service-list-item"><span>Глобулин, связывающий половые гормоны</span></li>
+                  </ul>
+                  <div class="slider__service-price-container">
+                    <span class="slider__service-total-price">Всего 1800₽</span>
+                    <span class="slider__service-price">4500₽</span>
+                  </div>
+                  <div class="slider__btns-container">
+                    <button class="slider__appointment-btn">Записаться</button>
+                    <button class="slider__detail-btn">Подробнее</button>
+                  </div>  
+                </div>
+              </div>
+
+              <div class="slider__display swiper-slide">
+                <div class="slider__img"></div>
+                <div class="slider__service-info">
+                  <h2 class="slider__service-title">Check-UP</h2>
+                  <h3 class="slider__service-subtitle">для мужчин</h3>
+                  <ul class="slider__service-list">
+                    <li class="slider__service-list-item"><span>Гормональный скрининг</span></li>
+                    <li class="slider__service-list-item"><span>Тестостерон</span></li>
+                    <li class="slider__service-list-item"><span>Свободный тестостерон</span></li>
+                    <li class="slider__service-list-item"><span>Глобулин, связывающий половые гормоны</span></li>
+                  </ul>
+                  <div class="slider__service-price-container">
+                    <span class="slider__service-total-price">Всего 2100₽</span>
+                    <span class="slider__service-price">3300₽</span>
+                  </div>
+                  <div class="slider__btns-container">
+                    <button class="slider__appointment-btn">Записаться</button>
+                    <button class="slider__detail-btn">Подробнее</button>
+                  </div>  
+                </div>
+              </div>
+              
+            </div>  
+
+            <div class="slider__nav-panel">
+              <div class="slider__nav-panel-container">
+                <button class="slider__prev-slide-btn slider__slide-btn_disabled"></button>
+                <div class="slider__state-counter">
+                  <span class="slider__current-slide">1</span>/<span class="slider__slide-counts">4</span>
+                </div>
+                <button class="slider__next-slide-btn"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+
+        <div class="logo footer__logo">
+          <a class="logo__link" href="#">
+            <img class="logo__img footer__logo-img" src="./img/logo.svg" alt="logo">
+          </a>
+        </div>
+        <ul class="footer__media-social-list">
+          <li class="footer__media-social-list-item">
+            <a href="#" class="">
+              <img class="footer__social-icon" src="./img/footer/inst.svg" alt="social_icon">
+            </a>
+          </li>
+          <li class="footer__media-social-list-item">
+            <a href="#">
+              <img class="footer__social-icon" src="./img/footer/whats.svg" alt="social_icon">
+            </a>
+          </li>
+          <li class="footer__media-social-list-item">
+            <a href="#">
+              <img class="footer__social-icon" src="./img/footer/telegram.svg" alt="social_icon">
+            </a>
+          </li>
+        </ul>
+
+        <nav class="footer__nav">
+          <ul class="footer__nav-link-list">
+            <li class="footer__nav-link-list-item"><a href="#" class="footer__nav-link">О клинике</a></li>
+            <li class="footer__nav-link-list-item"><a href="#" class="footer__nav-link">Услуги</a></li>
+            <li class="footer__nav-link-list-item"><a href="#" class="footer__nav-link">Специалисты</a></li>
+            <li class="footer__nav-link-list-item"><a href="#" class="footer__nav-link">Цены</a></li>
+            <li class="footer__nav-link-list-item"><a href="#" class="footer__nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+
+
+      </div>
+    </div>
+  </footer>
+  
+    <div class="popup">
+      <div class="popup__content">
+        <form class="form">
+          <h1 class="form__title">Заполните поля</h1>
+          <div class="form__group">
+            <label for="name">Имя:</label>
+            <input name="name" placeholder="Укажите ваше имя!" class="form__input" id="name" required />
+          </div>
+          <div class="form__group">
+            <label for="email">Email:</label>
+            <input name="emailaddress" placeholder="Укажите ваш Email!" class="form__input" type="email" id='email' required />
+          </div>
+          <div class="form__group">
+            <label for="message">Ваш вопрос:</label>
+            <textarea rows="4" cols="50" name="subject" placeholder="Введите ваше вопрос:" class="form__input" id="message" required></textarea>
+          </div>
+          <button class="form__btn">Отправить</button>
+        </form>
+        <div class="popup__close-icon"></div>
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>

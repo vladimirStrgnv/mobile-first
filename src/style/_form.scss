@@ -1,0 +1,28 @@
+.form {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        @extend %bold-font;
+        margin-bottom: 10px;
+
+    }
+
+    &__input {
+        @extend %normal-font;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    &__btn {
+        @include  standart-btn;
+        width: 196px;
+        background-color: #1FA181;
+        color: rgb(255, 255, 255);
+    }
+}
+

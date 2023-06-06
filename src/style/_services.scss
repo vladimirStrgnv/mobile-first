@@ -1,0 +1,265 @@
+.services {
+    &__inner {
+      padding-top: 48px;
+      padding-bottom: 42px;
+    }
+  }
+  
+  .slider {
+    &__display {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    &__img {
+      width: 100%;
+      max-width: 377px;
+      height: 169px;
+      border-radius: 5px 5px 0px 0px;
+      background-image: url('../img/services.png');
+      background-position: center center;
+      background-size: cover;
+    }
+  
+    &__service-info {
+      margin-bottom: 27px;
+      padding: 22px 37px 42px 23px;
+      background-color:#E2F0EF;
+    }
+  
+    &__service-title {
+      margin-bottom: 3px;
+      @extend %bold-font;
+      font-size: 26px;
+      line-height: 34px;
+      text-transform: uppercase;
+    }
+  
+    &__service-subtitle {
+      margin-bottom: 12px;
+      @extend %bold-font;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  
+    &__service-list-item {
+      display: flex;
+      margin-bottom: 8px;
+      @extend %normal-font;
+      font-size: 14px;
+      line-height: 145%;
+      &::before {
+        content: "●";  
+        color: #1FA181;;
+        font-weight: bold; 
+        display: inline-block; 
+        width: 1em;
+      }
+      &:last-child {
+        margin-bottom: 17px;
+      }
+    }
+  
+    &__service-price-container {
+      max-width: 160px;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    &__service-total-price {
+      @extend %normal-font;
+      font-size: 18px;
+      line-height: 23px;
+      color: #364844;
+    }
+  
+    &__service-price {
+      @extend %normal-font;
+      color: #868686;
+      font-size: 14px;
+      line-height: 18px;
+      text-decoration-line: line-through;
+    }
+  
+    &__appointment-btn {
+      @include  standart-btn;
+      min-width: 137px;
+      background-color: #0DBC91;
+      font-size: 14px;
+      line-height: 21px;
+      color: #FFFFFF;
+      &:hover {
+        @include standart-btn-active
+      }
+      &:active {
+        @include standart-btn-active
+      }
+    }
+  
+    &__detail-btn {
+      @include  standart-btn;
+      min-width: 137px;
+      background-color: none;
+      font-size: 14px;
+      line-height: 21px;
+      color: #0DBC91;
+      border: 1px solid #0DBC91;
+      &:hover {
+        background-color: #0DBC91;
+        color: #FFFFFF;
+        transition: all 0.5s
+      }
+      &:active{
+        background-color: #0DBC91;
+        color: #FFFFFF;
+        transition: all 0.5s
+      }
+    }
+  
+    &__nav-panel {
+      @extend %normal-font;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      line-height: 23px;
+    }
+  
+    &__nav-panel-container {
+      width: 170px;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+    }
+  
+    &__prev-slide-btn {
+      width: 34px;
+      height: 17px;
+      background-image: url('../img/left_arrow.svg');
+      &:hover {
+        @include arrow-slider-active
+      }
+      &:active {
+        @include arrow-slider-active
+      }
+    }
+  
+    &__next-slide-btn {
+      width: 34px;
+      height: 17px;
+      background-image: url('../img/right_arrow.svg');
+      &:hover {
+       @include arrow-slider-active
+      }
+      &:active {
+        @include arrow-slider-active
+      }
+    }
+  
+    &__slide-btn_disabled {
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+  
+  }
+  
+  @media (min-width: 1024px) {
+    .slider {
+      &__img {
+        border-radius: 5px 5px 0px 0px;
+        background-image: url('../img/services.png');
+        background-position: center center;
+        background-size: cover;
+      }
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .services {
+      &__inner {
+        padding-top: 101px;
+        padding-bottom: 99px;
+      }
+    }
+  
+    .slider {
+      &__display {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        background-color: #E2F0EF;
+      }
+  
+      &__img {
+        max-width: none;
+        width: 692px;
+        height: 440px;
+        border-radius: 0;
+        clip-path: polygon(5% 0, 100% 0, 100% 100%, 22% 100%);    
+      } 
+  
+      &__service-info {
+        min-height: 440px;
+        min-width: 448px;
+        padding: 53px 0 56px 63px;
+        margin-bottom: 0;
+      }
+    
+      &__service-title {
+        font-size: 38px;
+        line-height: 49px;
+      }
+    
+      &__service-subtitle {
+        font-size: 22px;
+        line-height: 28px;
+      }
+    
+      &__service-list-item {
+        margin-bottom: 8.6px;
+        font-size: 16px;
+        line-height: 21px;
+        &:last-child {
+          margin-bottom: 37px;
+        }
+      }
+    
+      &__service-price-container {
+        max-width: 185px;
+        margin-bottom: 25px;
+      }
+    
+      &__service-total-price {
+        font-size: 20px;
+        line-height: 26px;
+      }
+    
+      &__service-price {
+        font-size: 16px;
+        line-height: 24px;
+      }
+  
+      &__btns-container {
+        min-width: 405px;
+        display: flex;
+        justify-content: space-between
+      }
+    
+      &__appointment-btn {
+        min-width: 196px;
+      }
+    
+      &__detail-btn {
+        min-width: 196px;
+      }
+    
+  
+      &__nav-panel-container {
+        padding-top: 39px;
+      }
+    
+    }
+  }

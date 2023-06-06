@@ -1,0 +1,137 @@
+
+.footer {
+  background: #08664F;
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 42px;
+    padding-bottom: 41px;
+    justify-content: space-between;
+  }
+
+  &__logo-img {
+    width: 91px;
+    height: 27px;
+    margin-right: 134px;
+    filter: brightness(0) invert(1);
+    margin-bottom: 31px;
+  }
+
+  &__media-social-list {
+    width: 111px;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__social-icon {
+    width: 23px;
+    height: 23px;
+  }
+
+  &__nav-link-list-item {
+    margin-bottom: 14.5px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__nav-link {
+    @extend %normal-font;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+
+
+@media (min-width: 414px) {
+  .footer {
+    background: #08664F;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+
+    }
+  
+    &__logo-img {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: 1024px) { 
+  .footer {
+    &__media-social-list {
+      order: 1;
+    }
+    &__nav-link-list {
+      display: flex;
+      justify-content: space-between;
+      width: 402px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: 59px;
+      padding-bottom: 58px;
+    }
+  
+    &__logo-img {
+      width: 91px;
+      height: 27px;
+      margin-right: 50px;
+      filter: brightness(0) invert(1);
+      margin-bottom: 31px;
+    }
+  
+    &__media-social-list {
+      order: 1;
+      width: 135px;
+      height: 23px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; 
+    }
+  
+    &__social-icon {
+      width: 35px;
+      height: 35px;
+    }
+
+    &__nav {
+      display: flex;justify-content: center;
+    }
+  
+    &__nav-link-list {
+      display: flex;
+      justify-content: space-between;
+      width: 482px;
+    }
+  
+    &__nav-link-list-item {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  
+    &__nav-link {
+      @extend %normal-font;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+
+
+
