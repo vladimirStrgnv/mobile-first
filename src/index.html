@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <title>Test</title>
 </head>
@@ -67,12 +67,13 @@
           <picture class="about__picture">
             <source srcset="./img/about_bg@1x.png 1x, ./img/about_bg@2x.png 2x" media="(min-width: 1200px)">
             <source srcset="./img/about_bg_mobile@1x.png 1x, ./img/about_bg_mobile@2x.png 2x" media="(min-width: 320px)">
-            <img src="./img/about_bg@2x.png" class="about__img">
+            <img src="./img/about_bg@2x.png" class="about__img" alt="about__img">
           </picture>
           <div class="about__descrpt-container">
             <h1 class="about__title">Многопрофильная клиника для детей <br>и взрослых</h1>
             <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
           </div>
+        </div>
       </div>
     </section>
 
@@ -234,14 +235,14 @@
     <div class="popup">
       <div class="popup__content">
         <form class="form">
-          <h1 class="form__title">Заполните поля</h1>
+          <h2 class="form__title">Заполните поля</h2>
           <div class="form__group">
             <label for="name">Имя:</label>
-            <input name="name" placeholder="Укажите ваше имя!" class="form__input" id="name" required />
+            <input name="name" placeholder="Укажите ваше имя!" class="form__input" id="name" required>
           </div>
           <div class="form__group">
             <label for="email">Email:</label>
-            <input name="emailaddress" placeholder="Укажите ваш Email!" class="form__input" type="email" id='email' required />
+            <input name="emailaddress" placeholder="Укажите ваш Email!" class="form__input" type="email" id='email' required>
           </div>
           <div class="form__group">
             <label for="message">Ваш вопрос:</label>
@@ -254,7 +255,6 @@
     </div>
 
 
-  </div>
 
 </body>
 
